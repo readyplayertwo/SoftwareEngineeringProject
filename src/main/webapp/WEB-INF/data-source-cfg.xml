@@ -5,13 +5,13 @@
    http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
 
 
-    <bean id="myDataSource"
-          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<bean id="myDataSource"
+      class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 
-        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-        <property name="url" value="jdbc:mysql://127.0.0:3306/cerse" />
-        <property name="username" value="segg" />
-        <property name="password" value="seproject4" />
-    </bean>
+    <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+    <property name="url" value="jdbc:mysql://sql2.freemysqlhosting.net:3306/sql2107412" />
+    <property name="username" value="sql2107412" />
+    <property name="password" value="iE1*mW2!" />
+</bean>
 
 </beans>
