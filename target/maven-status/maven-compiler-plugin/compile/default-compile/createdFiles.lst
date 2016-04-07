@@ -1,0 +1,16 @@
+DAO\UserDao.class
+Service\TrainService.class
+Service\UserExtractor.class
+DAO\UserRowMapper.class
+DAO\UserDaoImpl.class
+Service\TrainExtractor.class
+Controllers\LoginController.class
+DAO\User.class
+DAO\Train.class
+Service\TrainServiceImpl.class
+Service\UserService.class
+DAO\TrainRowMapper.class
+DAO\TrainDaoImpl.class
+Service\UserServiceImpl.class
+Controllers\TrainController.class
+DAO\TrainDao.class
