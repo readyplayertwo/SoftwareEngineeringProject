@@ -27,9 +27,12 @@
 
     <bean id="userService" class="Service.UserServiceImpl" />
 
+<<<<<<< HEAD
     <bean id="trainDao" class="DAO.TrainDaoImpl" />
 
     <bean id="trainService" class="Service.TrainServiceImpl" />
 
+=======
+>>>>>>> ee3adb63f4cb05e51a2e35b826706d2c4e1036c1
 
 </beans>
