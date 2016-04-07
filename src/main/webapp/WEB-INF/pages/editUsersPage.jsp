@@ -4,29 +4,6 @@
 <html>
 <head>
 <title>Being Java Guys | Spring DI Hello World</title>
-<style>
-body {
- font-size: 20px;
- color: teal;
- font-family: Calibri;
-}
-
-td {
- font-size: 15px;
- color: black;
- width: 100px;
- height: 22px;
- text-align: center;
-}
-
-.heading {
- font-size: 18px;
- color: white;
- font: bold;
- background-color: orange;
- border: thick;
-}
-</style>
 </head>
 <body>
  <center>
