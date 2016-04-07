@@ -1,4 +1,6 @@
 <html>
+<link rel="stylesheet" type="text/css" href="styles.css">
+
 <head><title>Login</title></head>
 <body>
  <h1>Login</h1>
