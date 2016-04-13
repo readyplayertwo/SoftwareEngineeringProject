@@ -1,13 +1,10 @@
- /**
+/**
  * Created by gerard on 17/02/2016.
  */
 
 package Controllers;
 import java.security.Principal;
-<<<<<<< HEAD
-=======
 import java.util.ArrayList;
->>>>>>> ee3adb63f4cb05e51a2e35b826706d2c4e1036c1
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
