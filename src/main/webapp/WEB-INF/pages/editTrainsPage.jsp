@@ -3,6 +3,7 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 <title>China Express Railway| Edit Trains</title>
 <style>
 body {
