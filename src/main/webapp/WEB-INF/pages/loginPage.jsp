@@ -9,7 +9,7 @@
   <h1>Login</h1>
  </div>
  
- 
+ <div id="pageWrapper">
  <form name='f' action="j_spring_security_check" method='POST'>
  
     <table>
@@ -27,5 +27,6 @@
     
       <input name="submit" type="submit" value="Log In" class="button" />
 </form>
+</div>
 </body>
 </html>
