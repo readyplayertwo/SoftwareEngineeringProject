@@ -1,7 +1,10 @@
 <html>
 <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 
-<head><title>Login</title></head>
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<title>Login</title>
+</head>
 <body>
 
  
