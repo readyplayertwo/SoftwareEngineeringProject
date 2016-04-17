@@ -2,6 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 <title>Being Java Guys | Spring DI Hello World</title>
 <style>
 body {

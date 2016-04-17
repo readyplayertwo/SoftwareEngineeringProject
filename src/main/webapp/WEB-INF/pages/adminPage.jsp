@@ -2,6 +2,7 @@
 <%@page session="true"%>
 
 <html>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 <head><title>${title}</title></head>
 <body>
    <h2>Message : ${message}</h2>

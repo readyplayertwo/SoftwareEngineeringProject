@@ -1,7 +1,10 @@
 <html>
 <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 
-<head><title>Login</title></head>
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<title>Login</title>
+</head>
 <body>
 
  
@@ -9,7 +12,7 @@
   <h1>Login</h1>
  </div>
  
- 
+ <div id="pageWrapper">
  <form name='f' action="j_spring_security_check" method='POST'>
  
     <table>
@@ -27,5 +30,6 @@
     
       <input name="submit" type="submit" value="Log In" class="button" />
 </form>
+</div>
 </body>
 </html>
