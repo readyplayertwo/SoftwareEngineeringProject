@@ -38,7 +38,7 @@ td {
 
 
   <div>
-   <form:form method="post" action="/SpringMVCSecurityXML/TrainsUpdate" modelAttribute="train">
+   <form:form method="post" action="/TrainsUpdate" modelAttribute="train">
     <table>
      <tr>
       <td>Name :</td>

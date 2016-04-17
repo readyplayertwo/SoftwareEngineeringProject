@@ -2,7 +2,6 @@
 <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 
 <head>
-<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 <title>Login</title>
 </head>
 <body>
