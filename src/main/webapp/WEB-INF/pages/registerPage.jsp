@@ -37,7 +37,7 @@ td {
 
 
   <div>
-   <form:form method="post" action="/SpringMVCSecurityXML/insert" modelAttribute="user">
+   <form:form method="post" action="/insert" modelAttribute="user">
     <table>
      <tr>
       <td>First Name :</td>
