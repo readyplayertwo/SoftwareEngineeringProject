@@ -12,15 +12,12 @@
   <url>http://maven.apache.org</url>
 
 
-
-
   <properties>
     <!-- Generic properties -->
     <java.version>1.7</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
-
 
   <repositories>
     <!-- Repository for ORACLE JDBC Driver -->
@@ -116,7 +113,6 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>5.1.34</version>
     </dependency>
-
 
 
     <!-- SQLServer JDBC driver (JTDS) -->

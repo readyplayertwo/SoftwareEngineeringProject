@@ -3,7 +3,6 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 <title>Being Java Guys | Spring DI Hello World</title>
 <style>
 body {

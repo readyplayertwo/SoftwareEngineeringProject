@@ -1,9 +1,11 @@
-
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
- pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%
+response.setHeader("Cache-Control","no-cache"); //HTTP 1.1
+response.setHeader("Pragma","no-cache"); //HTTP 1.0
+response.setDateHeader ("Expires", 0);
+//prevents caching at the proxy server
+%>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="css/styles.css"/>
@@ -40,12 +42,10 @@ td {
 
   <table border="1">
    <tr>
-    <td class="heading">Name</td>
     <td class="heading">Source</td>
     <td class="heading">Destination</td>
     <td class="heading">Departure Time</td>
     <td class="heading">Arrival Time</td>
-    <td class="heading">Total Seats</td>
     <td class="heading">Kilometers</td>
     <td class="heading">First Class Seats Remaining</td>
     <td class="heading">Second Class A Seats Remaining</td>
@@ -56,14 +56,12 @@ td {
     <td class="heading">Edit</td>
     <td class="heading">Delete</td>
    </tr>
-   <c:forEach var="train" items="${trainList}">
+   <c:forEach var="train" items="${results}">
     <tr>
-     <td>${train.name}</td>
      <td>${train.source}</td>
      <td>${train.destination}</td>
      <td>${train.departureTime}</td>
      <td>${train.arrivalTime}</td>
-     <td>${train.totalSeats}</td>
      <td>${train.kilometers}</td>
      <td>${train.firstClassSeats}</td>
      <td>${train.secondClassASeats}</td>
@@ -71,8 +69,7 @@ td {
      <td>${train.route}</td>
      <td>${train.date}</td>
 
-     <td><a href="editTrains?id=${train.trainId}">Edit</a></td>
-     <td><a href="deleteTrain?id=${train.trainId}">Delete</a></td>
+     <td><a href="editTrains?id=${train.trainId}">Book</a></td>
     </tr>
    </c:forEach>
   </table>
