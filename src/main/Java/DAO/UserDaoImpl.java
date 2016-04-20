@@ -18,14 +18,27 @@ public class UserDaoImpl implements UserDao {
     public void insertData(User user) {
 
         String sql = "INSERT INTO USERS "
-            + "(Forename,Surname, USERNAME, PASSWORD,ROLE) VALUES (?,?,?,?,?)";
+                + "(Forename,Surname, USERNAME, PASSWORD,ROLE) VALUES (?,?,?,?,?)";
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(myDataSource);
 
         jdbcTemplate.update(
-            sql,
-            new Object[] { user.getForeName(), user.getSurName(),
-                user.getUsername(), user.getPassword(), "ROLE_USER" });
+                sql,
+                new Object[] { user.getForeName(), user.getSurName(),
+                        user.getUsername(), user.getPassword(), "ROLE_USER" });
+
+    }
+
+    public void insertDataAdmin (User user) {
+        String sql = "INSERT INTO USERS "
+                + "(Forename,Surname, USERNAME, PASSWORD,ROLE) VALUES (?,?,?,?,?)";
+
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(myDataSource);
+
+        jdbcTemplate.update(
+                sql,
+                new Object[] { user.getForeName(), user.getSurName(),
+                        user.getUsername(), user.getPassword(), "ROLE_ADMIN" });
 
     }
 

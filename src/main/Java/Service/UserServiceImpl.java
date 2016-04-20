@@ -21,6 +21,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public void insertDataAdmin(User user) {userdao.insertDataAdmin(user);}
+
+    @Override
     public List<User> getUserList() {
         return userdao.getUserList();
     }

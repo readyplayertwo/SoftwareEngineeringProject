@@ -43,12 +43,25 @@ public class LoginController {
         return ("registerPage");
     }
 
+     @RequestMapping("/insertAdmin")
+     public String insertAdmin(@ModelAttribute User user) {
+
+         return ("addAdmin");
+     }
+
     @RequestMapping("/insert")
     public String insertData(@ModelAttribute User user) {
         if (user != null)
             userService.insertData(user);
         return "redirect:/getList";
     }
+
+     @RequestMapping("/insertAdminDB")
+     public String insertAdminDB(@ModelAttribute User user) {
+         if (user != null)
+             userService.insertData(user);
+         return "redirect:/getList";
+     }
 
     @RequestMapping("/getList")
     public ModelAndView getUserList() {
@@ -61,7 +74,6 @@ public class LoginController {
                                   @ModelAttribute User user) {
 
          user = userService.getUser(id);
-
 
          Map<String, Object> map = new HashMap<String, Object>();
          map.put("user", user);

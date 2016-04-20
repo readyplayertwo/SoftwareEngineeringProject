@@ -41,4 +41,7 @@ import java.util.List;
 
         }
 
+        @Override
+        public List<Train> SearchTrain(String source, String destination) { return  trainDao.SearchTrain(source, destination);}
+
     }

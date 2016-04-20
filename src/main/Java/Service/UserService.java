@@ -10,6 +10,7 @@ import java.util.List;
 public interface UserService {
 
     public void insertData(User user);
+    public void insertDataAdmin(User user);
     public List<User> getUserList();
     public void deleteData(String id);
     public User getUser(String id);

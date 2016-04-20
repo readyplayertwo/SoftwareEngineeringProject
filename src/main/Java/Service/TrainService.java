@@ -14,4 +14,7 @@ public interface TrainService {
     public void deleteData(String id);
     public Train getTrain(String id);
     public void updateData(Train train);
+    public List<Train>  SearchTrain (String source, String desintation );
+//    public List<Train> getSourceList();
+
 }

@@ -17,9 +17,8 @@ public class TrainDaoImpl implements TrainDao {
 
     @Override
     public void insertData(Train train) {
-        String sql = "INSERT INTO Train_Schedule"
-                + "(Name, Source, Destination, Departure_Time, Arrival_Time, Total_Seats, Kilometers, FirstClassSeats," +
-                "SecondClassASeats, SecondClassBSeats, Route, Date) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO Train_Schedule "
+                + "(Name, Source, Destination, Departure_Time, Arrival_Time, Total_Seats, Kilometers, FirstClassSeats, SecondClassASeats, SecondClassBSeats, Route, Date) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(myDataSource);
 
@@ -62,6 +61,16 @@ public class TrainDaoImpl implements TrainDao {
         JdbcTemplate jdbcTemplate = new JdbcTemplate(myDataSource);
         jdbcTemplate.update(sql);
     }
+//    @Override
+//    public List<Train> getSourceList() {
+//        List sourceList = new ArrayList();
+//
+//        String sql = "select Source from Train_Schedule";
+//
+//        JdbcTemplate jdbcTemplate = new JdbcTemplate(myDataSource);
+//        sourceList = jdbcTemplate.query(sql, new TrainRowMapper());
+//        return sourceList;
+//    }
 
     @Override
     public Train getTrain(String id) {
@@ -71,5 +80,18 @@ public class TrainDaoImpl implements TrainDao {
         JdbcTemplate jdbcTemplate = new JdbcTemplate(myDataSource);
         trainList = jdbcTemplate.query(sql, new TrainRowMapper());
         return trainList.get(0);
+    }
+
+
+    @Override
+    public List<Train> SearchTrain(String source, String destination ) {
+        List trainList = new ArrayList();
+
+        String sql = "select * from Train_Schedule WHERE Route LIKE '%"+source+"%'AND Route LIKE '%"+destination+"%'";
+
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(myDataSource);
+        trainList = jdbcTemplate.query(sql, new TrainRowMapper());
+        return trainList;
+
     }
 }

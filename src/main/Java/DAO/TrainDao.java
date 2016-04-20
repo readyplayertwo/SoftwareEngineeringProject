@@ -12,5 +12,7 @@ public interface TrainDao {
     public void updateData(Train train);
     public void deleteData(String id);
     public Train getTrain(String id);
+    public List<Train>  SearchTrain (String source, String desintation );
+//    public List<Train> getSourceList();
 
 }

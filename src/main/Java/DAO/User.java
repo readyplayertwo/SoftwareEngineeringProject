@@ -10,6 +10,8 @@ public class User {
     private String SurName;
     private String userName;
     private String password;
+    private String Role;
+
 
     public int getUserId() {
         return UserId;
